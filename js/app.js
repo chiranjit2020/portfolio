@@ -15,4 +15,7 @@ ham.addEventListener('click', () => {
 });
 
 
-
+//Upor(Back to top button) Script
+const button = document.querySelector("#upor");
+// UPOR(Element, Speed, Offset)
+UPOR(button,500,100);
