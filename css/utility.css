@@ -40,7 +40,6 @@ body {
     line-height: 1.3;
     font-weight: 400;
     background-color: var(--off-white);
-    background: transparent url(../images/bg.png) repeat fixed 0% 0%;
     padding: 0;
     margin: 0;
 }
@@ -516,8 +515,21 @@ ol {
     padding: 2rem;
     margin: 0 0 3rem 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: relative;
 }
 
+.my-skills .leg-3:nth-child(6) .card::after{
+    content: 'LEARNER';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 1.2rem 0 0 1.2rem;
+    letter-spacing: .1rem;
+}
 .card .card-img{
     font-size: 8rem;
     text-align: center;
@@ -539,7 +551,12 @@ ol {
 .js-clr{
     color: #dab92c;
 }
-
+.jq-clr{
+    color: #1168AA;
+}
+.php-clr{
+    color: #8790BA;
+}
 .bs-clr{
     color: #7044a6;
 }
