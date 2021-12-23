@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" sizes="24x24" href="./favicon.png">
     <meta name="theme-color" content="#a8eb12">
     <meta property="og:title" content="Professional Front-end Web Designer and Developer" />
     <meta property="og:description" content="Hire me for any web design and development project." />
@@ -50,11 +50,10 @@
                     <nav class="navbar">
                         <ul class="df jcsb aic">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-
+                            <li><a href="#about-section">About</a></li>
+                            <li><a href="#skills-section">My Skills</a></li>
+                            <!-- <li><a href="#blog">Blog</a></li> -->
+                            <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </nav>
 
@@ -78,7 +77,7 @@
                     <a href="#" class="btn">Download Resume</a>
                 </div>
                 <div class="my-photo">
-                    <img src="images/chiranjit-karmakar-photo.jpg" alt="Chiranjit Karmakar, website designer and developer, Creator of Codeworm YouTube channel." class="img-fluid" />
+                    <img src="images/chiranjit-karmakar-photo.jpg" alt="Chiranjit Karmakar, website designer and developer, Creator of Codeworm YouTube channel." class="img-fluid" loading="lazy"/>
                 </div>
             </div>
 
@@ -86,7 +85,7 @@
     </div>
 
     <!-- About -->
-    <section class="about-me text-center">
+    <section class="about-me text-center" id="about-section">
         <div class="bin">
             <h2 class="section-title">About Me</h2>
             <p>I learned to make websites on my own. I know how fun and rewarding it is, but I also know that it can be incredibly frustrating. I'm here to help make your journey into web development as easy and as fun as possible.</p>
@@ -95,12 +94,12 @@
     </section>
 
     <!-- Skills -->
-    <section class="my-skills">
+    <section class="my-skills" id="skills-section">
         <div class="bin">
             <h2 class="section-title">My Skills</h2>
 
             <div class="df">
-                <div class="leg-3">
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <i class='bx bxl-html5 html-clr'></i>
@@ -110,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="leg-3">
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <i class='bx bxl-css3 css-clr'></i>
@@ -120,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="leg-3">
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <i class='bx bxl-javascript js-clr'></i>
@@ -130,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="leg-3">
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <i class='bx bxl-jquery jq-clr'></i>
@@ -140,7 +139,7 @@
                         </div>
                     </div>
                 </div>                
-                <div class="leg-3">
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <i class='bx bxl-bootstrap bs-clr'></i>
@@ -150,7 +149,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="leg-3">
+                <div class="leg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/bulma.png" alt="Bulma Logo" />
+                        </div>
+                        <div class="card-body">
+                            <h3>Bulma</h3>
+                        </div>
+                    </div>
+                </div>  
+                <div class="leg-4">
+                    <div class="card">
+                        <div class="card-img">
+                            <i class='bx bxl-react react-clr'></i>
+                        </div>
+                        <div class="card-body">
+                            <h3>React</h3>
+                        </div>
+                    </div>
+                </div>                               
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <img src="images/php.png" alt="PHP Logo">
@@ -160,11 +179,7 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-                <div class="leg-3">
+                <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
                             <img src="images/photoshop.png" alt="Photoshop" />
@@ -179,7 +194,7 @@
     </section>
     
     <!-- Get in touch -->
-    <section class="get-in-touch">
+    <section class="get-in-touch" id="contact-section">
         <div class="bin">
             <h2  class="section-title">Get in Touch with Me</h2>
 
@@ -188,23 +203,27 @@
 
             <div class="leg-6">
                 <h3 class="mb-2">Fill the form</h3>
-                <form>
+                <form method="POST" id="frmSubmit">
                     <div class="input-group mb-2">
-                        <input type="text" placeholder="Full Name" class="form-control" required />
+                        <input type="text" placeholder="Full Name*" class="form-control" name="name" required />
                     </div>
 
                     <div class="input-group mb-2">
-                        <input type="email" placeholder="Email" class="form-control" required />
+                        <input type="email" placeholder="Email*" class="form-control" name="email" required />
                     </div> 
 
                     <div class="input-group mb-2">
-                        <textarea placeholder="Message" class="form-control" ></textarea>
+                        <input type="tel" placeholder="Phone" class="form-control" name="phone" />
+                    </div> 
+
+                    <div class="input-group mb-2">
+                        <textarea placeholder="Message" class="form-control" name="message"></textarea>
                     </div>  
 
                     <div class="input-group">
-                        <input type="submit" value="Send" class="btn btn-submit">
-                    </div>  
-
+                        <button type="submit"class="btn btn-submit" id="btnSubmit"><i class='bx bxl-telegram mr-1'></i> Send</button>
+                        <span id="msg"></span>
+                    </div> 
                 </form>
             </div>
 
@@ -234,7 +253,7 @@
                 <li><a href="https://github.com/chiranjit2020" target="_blank">Github</a></li>
                 <li><a href="https://www.youtube.com/channel/UCSPXTAYn7JQFd8Qeoe58iEw" target="_blank">Youtube</a></li>
             </ul>
-            <p>© 2021 Chiranjit Karmakar</p>
+            <p>&copy; <span id="year"></span> by Chiranjit Karmakar</p>
         </div>
     </footer>
 
@@ -243,21 +262,26 @@
         <button class="closebtn"><i class='bx bx-x'></i></button>
         <ul class="app-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skill-section">My Skills</a></li>
+            <!-- <li><a href="#blog">Blog</a></li> -->
+            <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
 
     <!-- To Top Button -->
-    <button id="upor">
+<!--     <button id="upor">
         <i class='bx bxs-to-top'></i>
-    </button>
+    </button> -->
+
+
 
     <!-- UPOR JS  -->
     <script src="js/upor.js"></script> 
 
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    
     <!-- Custom JS -->
     <script src="js/app.js" defer></script>
 
