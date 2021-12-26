@@ -1,3 +1,11 @@
+'use strict'
+
+window.addEventListener("load", function (event) {
+    let loaderImg = document.getElementById('preloader');
+    loaderImg.style.display = 'none';
+});
+
+
 const button = document.querySelector("#back2top");
 // Call the BACK2TOP Function
 // BACK2TOP(element, offsetToValue)
@@ -6,28 +14,28 @@ BACK2TOP(button, 200);
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 //Mobile Menu
 
-function closeNav(){
-	let closeBtn = document.querySelector(".closebtn");
+function closeNav() {
+    let closeBtn = document.querySelector(".closebtn");
 
-	closeBtn.addEventListener('click', () => {
-		let mmenu = document.querySelector('.menu');
-		mmenu.classList.remove("menu-visible");
-	});
+    closeBtn.addEventListener('click', () => {
+        let mmenu = document.querySelector('.menu');
+        mmenu.classList.remove("menu-visible");
+    });
 }
 
 closeNav();
 
-function openNav(){
-	let hamburger = document.querySelector(".hamburger");
-	hamburger.addEventListener("click", () => {
-		let mmenu = document.querySelector('.menu');
-		mmenu.classList.add("menu-visible");		
-	});
+function openNav() {
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", () => {
+        let mmenu = document.querySelector('.menu');
+        mmenu.classList.add("menu-visible");
+    });
 }
 
 openNav();
@@ -38,7 +46,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 const form = document.getElementById('form');
 const result = document.getElementById('msg');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
     const formData = new FormData(form);
     e.preventDefault();
     var object = {};
@@ -59,7 +67,7 @@ form.addEventListener('submit', function(e) {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-            	result.style.display = "inline-block";
+                result.style.display = "inline-block";
                 result.innerHTML = json.message;
             } else {
                 console.log(response);
@@ -71,7 +79,7 @@ form.addEventListener('submit', function(e) {
             console.log(error);
             result.innerHTML = "Something went wrong!";
         })
-        .then(function() {
+        .then(function () {
             form.reset();
             setTimeout(() => {
                 result.style.display = "none";

@@ -17,6 +17,9 @@
 </head>
 
 <body>
+   <div id="preloader">
+       <img src="images/loader.gif" alt="loader" class="img-fluid"/>
+   </div>
     <header>
         <div class="header-top pt-1 pb-1">
             <div class="bin">
@@ -77,7 +80,7 @@
                     <a href="#" class="btn">Download Resume</a>
                 </div>
                 <div class="my-photo">
-                    <img src="images/chiranjit-karmakar-photo.jpg" alt="Chiranjit Karmakar, website designer and developer, Creator of Codeworm YouTube channel." class="img-fluid" loading="lazy"/>
+                    <img src="images/chiranjit-karmakar-photo.jpg" alt="Chiranjit Karmakar, website designer and developer, Creator of Codeworm YouTube channel." class="img-fluid" loading="lazy" />
                 </div>
             </div>
 
@@ -93,7 +96,7 @@
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- My Skills -->
     <section class="my-skills" id="skills-section">
         <div class="bin">
             <h2 class="section-title">My Skills</h2>
@@ -138,7 +141,7 @@
                             <h3>JQuery</h3>
                         </div>
                     </div>
-                </div>                
+                </div>
                 <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
@@ -158,7 +161,7 @@
                             <h3>Bulma</h3>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
@@ -168,7 +171,7 @@
                             <h3>React</h3>
                         </div>
                     </div>
-                </div>                               
+                </div>
                 <div class="leg-4">
                     <div class="card">
                         <div class="card-img">
@@ -192,55 +195,60 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Get in touch -->
     <section class="get-in-touch" id="contact-section">
         <div class="bin">
-            <h2  class="section-title">Get in Touch with Me</h2>
+            <h2 class="section-title">Get in Touch with Me</h2>
 
             <div class="df jcsb">
-                
 
-            <div class="leg-6">
-                <h3 class="mb-2">Fill the form</h3>
-                <form method="POST" action="https://api.web3forms.com/submit" id="form">
-                    <input type="hidden" name="apikey" value="f479b14e-9f2b-443a-aa7f-d18865d5881d">
-                    <div class="input-group mb-2">
-                        <input type="text" placeholder="Full Name*" class="form-control" name="name" required />
-                    </div>
 
-                    <div class="input-group mb-2">
-                        <input type="email" placeholder="Email*" class="form-control" name="email" required />
-                    </div> 
+                <div class="leg-6">
+                    <h3 class="mb-2">Have Question? Write A Message</h3>
+                    <form method="POST" action="https://api.web3forms.com/submit" id="form" autocomplete="off">
+                        <input type="hidden" name="apikey" value="f479b14e-9f2b-443a-aa7f-d18865d5881d">
+                        <div class="input-group mb-2">
+                            <input type="text" placeholder="Full Name*" class="form-control" name="name" required />
+                        </div>
 
-                    <div class="input-group mb-2">
-                        <input type="tel" placeholder="Phone" class="form-control" name="phone" />
-                    </div> 
+                        <div class="input-group mb-2">
+                            <input type="email" placeholder="Email*" class="form-control" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+                        </div>
 
-                    <div class="input-group mb-2">
-                        <textarea placeholder="Message" class="form-control" name="message"></textarea>
-                    </div>  
-                     <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
-                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <div class="input-group">
-                        <button type="submit"class="btn btn-submit" id="btnSubmit"><i class='bx bxl-telegram mr-1'></i> Send</button>
-                        <span id="msg"></span>
-                    </div> 
-                </form>
-            </div>
+                        <div class="input-group mb-2">
+                            <input type="tel" placeholder="Phone*" class="form-control" name="phone" required />
+                        </div>
 
-            <div class="leg-6">
-                <h3 class="mb-2">Address</h3>
-                <address class="mb-2">
-                    <p>
-                        <i class='bx bx-map'></i>
-                        <span>Dharmapur, Habra, 24 Pgs(N), W.B</span>
-                    </p>
-                </address>
-                <div class="map-block">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471479.1849443559!2d88.15697776006218!3d22.600370145536207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8b05b5bbc32af%3A0x1c137b4a7842c5fc!2sHabra%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1639633080718!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="input-group mb-2">
+                            <textarea placeholder="Message" class="form-control" name="message"></textarea>
+                        </div>
+                        <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-submit" id="btnSubmit"><i class='bx bxl-telegram mr-1'></i> Send</button>
+                            <span id="msg"></span>
+                        </div>
+                    </form>
                 </div>
-            </div>
+
+                <div class="leg-6">
+                    <h3 class="mb-2">Address</h3>
+                    <address class="mb-2">
+                        <p>
+                            <i class='bx bx-map'></i>
+                            <span>Dharmapur, Habra, 24 Pgs(N), W.B</span>
+                        </p>
+                    </address>
+                    <div class="links">
+                        <a href="tel:8918669308"><i class='bx bx-phone'></i> 8918-669-308</a>
+                        <a href="mailto:chiranjit.rick002@gmail.com"><i class='bx bx-envelope'></i> chiranjit.rick002@gmail.com</a>
+                    </div>
+                    
+                    <div class="map-block">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471479.1849443559!2d88.15697776006218!3d22.600370145536207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8b05b5bbc32af%3A0x1c137b4a7842c5fc!2sHabra%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1639633080718!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -278,8 +286,8 @@
 
 
     <!-- UPOR JS  -->
-    <script src="js/upor.js"></script> 
-<script src="js/back2top.min.js"></script>
+    <script src="js/upor.js"></script>
+    <script src="js/back2top.min.js"></script>
     <!-- Custom JS -->
     <script src="js/app.js"></script>
 
