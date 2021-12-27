@@ -84,10 +84,27 @@ header .header-bottom .hamburger {
 
 /*Banner*/
 .banner {
+    position: relative;
     background-color: #fff;
+    /*
     background-image: var(--bgi);
-    padding: 10rem 0;
+    background-image: url('../images/banner-colored.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+*/
+    /*    padding: 10rem 0;*/
     margin: 0;
+}
+
+.banner .desc {
+    position: absolute;
+    inset: 0;
+
+}
+
+.banner .desc .df {
+    height: 100%;
 }
 
 .banner .hero-text {
@@ -104,7 +121,8 @@ header .header-bottom .hamburger {
 
 .banner .hero-text h1 span {
     font-family: 'Lato', sans-serif;
-    font-size: 7rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8rem;
     display: block;
     color: var(--black);
     font-weight: 800;
@@ -330,7 +348,7 @@ button#back2top {
 }
 
 /*Preloader*/
-#preloader{
+#preloader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,10 +358,11 @@ button#back2top {
     top: 0;
     right: 0;
     bottom: 0;
-    inset:0;
+    inset: 0;
     pointer-events: none;
     z-index: 999999;
 }
+
 /*Media Query*/
 @media screen and (max-width: 480px) {
     header .header-bottom nav.navbar {
