@@ -86,21 +86,16 @@ header .header-bottom .hamburger {
 .banner {
     position: relative;
     background-color: #fff;
-    /*
-    background-image: var(--bgi);
-    background-image: url('../images/banner-colored.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right;
-*/
-    /*    padding: 10rem 0;*/
     margin: 0;
+}
+
+.banner .banner-mobile {
+    display: none;
 }
 
 .banner .desc {
     position: absolute;
     inset: 0;
-
 }
 
 .banner .desc .df {
@@ -419,6 +414,14 @@ button#back2top {
 
 /*Media Query*/
 @media screen and (max-width: 480px) {
+    .banner .banner-desktop {
+        display: none;
+    }
+
+    .banner .banner-mobile {
+        display: block;
+    }
+
     header .header-bottom nav.navbar {
         display: none;
     }
@@ -474,6 +477,18 @@ button#back2top {
         line-height: 1.3;
         padding: 0;
         margin: 0 0 2rem 0;
+    }
+
+    .my-skills .df .leg-4 {
+        width: 50%;
+    }
+
+    .get-in-touch form#form {
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        margin-bottom: 6rem;
     }
 
 }
