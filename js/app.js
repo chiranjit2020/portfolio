@@ -17,28 +17,25 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-//Mobile Menu
 
-function closeNav() {
-    let closeBtn = document.querySelector(".closebtn");
 
-    closeBtn.addEventListener('click', () => {
-        let mmenu = document.querySelector('.menu');
-        mmenu.classList.remove("menu-visible");
-    });
+//Active Class Add Remove
+function addRemove(e) {
+    // Get the container element
+    var linkContainer = document.querySelector(".footer-menu");
+    // Get all buttons with class="btn" inside the container
+    var links = linkContainer.getElementsByClassName("nav-link");
+
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
 }
-
-closeNav();
-
-function openNav() {
-    let hamburger = document.querySelector(".hamburger");
-    hamburger.addEventListener("click", () => {
-        let mmenu = document.querySelector('.menu');
-        mmenu.classList.add("menu-visible");
-    });
-}
-
-openNav();
+addRemove();
 
 //Footer Year
 document.getElementById("year").innerHTML = new Date().getFullYear();
