@@ -20,10 +20,12 @@
 
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- Preloader -->
-    
+
+    <!--
     <div id="preloader">
         <img src="images/loader.gif" alt="loader" />
     </div>
+-->
 
     <header id="header">
         <div class="header-top pt-1 pb-1">
@@ -38,6 +40,7 @@
 
                     <div class="social-block">
                         <ul class="df jcsb aic">
+                            <li>Follow me on -</li>
                             <li><a href="#" title="Linkedin"><i class='bx bxl-linkedin'></i></a></li>
                             <li><a href="https://github.com/chiranjit2020" title="Github" target="_blank"><i class='bx bxl-github'></i></a></li>
                             <li><a href="https://www.youtube.com/channel/UCSPXTAYn7JQFd8Qeoe58iEw" title="YouTube" target="_blank"><i class='bx bxl-youtube'></i></a></li>
@@ -65,10 +68,13 @@
                         </ul>
                     </nav>
 
-                    <button class="hamburger" type="button">
-                        <i class='bx bx-sun' ></i>
-                        <i class='bx bx-moon' ></i>
-                    </button>
+                    <div class="hamburger" type="button">
+                        <input type="checkbox" id="mode">
+                        <label for="mode">
+                            <i class='bx bxs-sun'></i>
+                            <i class='bx bxs-moon'></i>
+                        </label>
+                    </div>
 
                 </div> <!-- .df -->
             </div> <!-- .bin -->
@@ -277,39 +283,39 @@
     <button id="back2top">
         <i class='bx bxs-to-top'></i>
     </button>
-    
-    
+
+
     <!-- FOOTER MENU -->
     <nav class="footer-menu">
         <ul class="df jcsb aic">
             <li class="nav-link active">
                 <a href="#header">
-                   <span><i class='bx bxs-home'></i></span>
+                    <span><i class='bx bxs-home'></i></span>
                     home
                 </a>
             </li>
             <li class="nav-link">
                 <a href="#about-section">
-                   <span><i class='bx bxs-user'></i></span>
+                    <span><i class='bx bxs-user'></i></span>
                     about
                 </a>
             </li>
-            
+
             <li class="nav-link">
-               <a href="#skills-section">
-               <span><i class='bx bxs-vector'></i></span>
-                my skills
+                <a href="#skills-section">
+                    <span><i class='bx bxs-vector'></i></span>
+                    my skills
                 </a>
             </li>
             <li class="nav-link">
-               <a href="#">
-               <span><i class='bx bxs-keyboard'></i></span>
-                my work
+                <a href="#">
+                    <span><i class='bx bxs-keyboard'></i></span>
+                    my work
                 </a>
             </li>
             <li class="nav-link">
                 <a href="#contact-section">
-                   <span><i class='bx bxs-phone'></i></span>
+                    <span><i class='bx bxs-phone'></i></span>
                     contact
                 </a>
             </li>

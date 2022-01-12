@@ -73,6 +73,7 @@ body {
     background-color: var(--off-white);
     padding: 0;
     margin: 0;
+    transition: background 0.2s linear;
 }
 
 a,
@@ -604,6 +605,10 @@ ol {
 .card .card-body {
     text-align: center;
     margin: 1rem 0 0 0;
+}
+
+.card .card-body h3 {
+    color: #000;
 }
 
 .html-clr {

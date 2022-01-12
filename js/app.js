@@ -2,8 +2,21 @@
 
 window.addEventListener("load", function (event) {
     let loaderImg = document.getElementById('preloader');
-    loaderImg.style.display = 'none';
+    //loaderImg.style.display = 'none';
 });
+
+//Dark Mode -Light Mode
+function themeChange() {
+    const body = document.getElementsByTagName('body');
+    const mode = document.getElementById('mode');
+
+    mode.addEventListener('change', () => {
+        body[0].classList.toggle('dark');
+    });
+}
+
+themeChange();
+
 
 
 const button = document.querySelector("#back2top");

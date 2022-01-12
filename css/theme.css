@@ -1,0 +1,86 @@
+body.dark {
+    --bg-dark: #1e272e;
+    color: var(--off-white);
+    background-color: var(--bg-dark);
+}
+
+body.dark header .header-top {
+    background-color: var(--bg-dark);
+}
+
+body.dark header .header-top .contact-block ul li a,
+body.dark header .header-top .social-block ul li,
+body.dark header .header-top .social-block ul li a {
+    color: var(--off-white);
+}
+
+body.dark .banner .desc {
+    background-color: var(--bg-dark);
+}
+
+body.dark .banner .hero-text h1,
+body.dark .banner .hero-text h1 span {
+    color: var(--off-white);
+}
+
+body.dark .banner .hero-text a.btn {
+    color: #000;
+    background-color: var(--off-white);
+}
+
+body.dark .about-me {
+    background: var(--bg-dark);
+}
+
+body.dark .about-me .section-title,
+body.dark .about-me p {
+    color: var(--off-white);
+}
+
+body.dark .my-skills {
+    background: var(--bg-dark);
+}
+
+body.dark .my-skills .section-title {
+    color: var(--off-white);
+}
+
+body.dark .my-skills .card {
+    background-color: #000;
+    border-color: #000;
+    box-shadow: rgb(0 0 0) 0px 8px 24px;
+}
+
+body.dark .my-skills .card .card-img img {
+    filter: brightness(4);
+}
+
+body.dark .my-skills .card .card-body h3 {
+    color: var(--off-white);
+}
+
+body.dark .get-in-touch {
+    background: var(--bg-dark);
+}
+
+body.dark .get-in-touch h2 {
+    color: var(--off-white);
+}
+
+body.dark .get-in-touch .links a {
+    color: var(--off-white);
+}
+
+body.dark .footer-menu {
+    background: var(--bg-dark);
+}
+
+body.dark .footer-menu ul li.active a,
+body.dark .footer-menu ul li a:hover {
+    color: var(--off-white);
+}
+
+body.dark .footer-menu ul li.active a::after,
+body.dark .footer-menu ul li a:hover::after {
+    background-color: var(--off-white);
+}
