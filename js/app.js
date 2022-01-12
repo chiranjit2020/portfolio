@@ -2,7 +2,7 @@
 
 window.addEventListener("load", function (event) {
     let loaderImg = document.getElementById('preloader');
-    //loaderImg.style.display = 'none';
+    loaderImg.style.display = 'none';
 });
 
 //Dark Mode -Light Mode
