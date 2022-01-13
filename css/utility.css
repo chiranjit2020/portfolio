@@ -560,13 +560,14 @@ ol {
 
 .section-title {
     font-family: var(--secondary-font);
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--black);
-    line-height: 1.3;
+    line-height: 1.2;
     text-align: center;
     padding: 0;
     margin: 0 0 3rem 0;
 }
+
 
 .card {
     border-radius: .3rem;
