@@ -61,11 +61,27 @@ body.dark .my-skills .card .card-body h3 {
     color: var(--off-white);
 }
 
+body.dark .my-works {
+    background: var(--bg-dark);
+}
+
+body.dark .my-works .section-title {
+    color: var(--off-white);
+}
+
 body.dark .get-in-touch {
     background: var(--bg-dark);
 }
 
 body.dark .get-in-touch h2 {
+    color: var(--off-white);
+}
+
+body.dark .get-in-touch .sub-title {
+    color: var(--off-white);
+}
+
+body.dark .get-in-touch address p span {
     color: var(--off-white);
 }
 
