@@ -135,6 +135,7 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bxs-moon {
     position: relative;
     background-color: #fff;
     margin: 0;
+    line-height: 0;
 }
 
 .banner .banner-desktop {}

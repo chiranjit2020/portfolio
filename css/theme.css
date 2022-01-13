@@ -1,3 +1,5 @@
+/*Dark Theme CSS*/
+
 body.dark {
     --bg-dark: #1e272e;
     color: var(--off-white);
