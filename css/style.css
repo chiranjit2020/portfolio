@@ -265,21 +265,12 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bxs-moon {
 
 .my-works .work-card .work-img {
     overflow: hidden;
-    position: relative;
     line-height: 0;
-}
-
-.my-works .work-card .work-img::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .my-works .work-card .work-img img {
     animation: image-slide 3s ease infinite;
 }
-
 
 @keyframes image-slide {
     0% {
