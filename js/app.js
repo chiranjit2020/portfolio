@@ -53,6 +53,7 @@ addRemove();
 //Footer Year
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
+//Form Submit
 const form = document.getElementById('form');
 const result = document.getElementById('msg');
 

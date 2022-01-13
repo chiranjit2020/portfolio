@@ -553,6 +553,10 @@ ol {
     background-color: var(--success-color);
 }
 
+.btn:active {
+    transform: scale(0.94);
+}
+
 .glass {
     backdrop-filter: blur(3rem);
     background-color: rgba(255, 255, 255, .2);
@@ -639,3 +643,4 @@ ol {
 .bs-clr {
     color: #7044a6;
 }
+
