@@ -705,6 +705,10 @@ button#back2top {
         margin-bottom: 0.7rem;
     }
 
+    .about-me {
+        background: #fff;
+    }
+
     .about-me .about-text,
     .about-me .about-text .section-title {
         text-align: center;
