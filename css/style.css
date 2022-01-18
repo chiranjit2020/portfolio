@@ -92,6 +92,7 @@ header .header-top .social-block ul li a::after {
     height: 100%;
     z-index: -1;
     border-radius: 0.4rem;
+    border-radius: 51% 49% 51% 49% / 29% 59% 41% 71%;
     padding: 1rem;
     transition: var(--trans);
 }
