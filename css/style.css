@@ -214,8 +214,7 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bxs-moon {
 }
 
 .banner .hero-text h1 span {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Noe Display', sans-serif;
+    font-family: var(--secondary-font);
 
     font-size: 8rem;
     display: block;
