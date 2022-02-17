@@ -207,8 +207,6 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bxs-moon {
 
 .banner .hero-text h1 {
     font-family: var(--secondary-font);
-    font-family: 'Noe Display', sans-serif;
-
     font-size: 3rem;
     color: var(--primary-color);
     line-height: 1.1;
