@@ -147,34 +147,23 @@ header .header-bottom .hamburger label {
     width: var(--size);
     height: var(--size);
     display: block;
-    overflow-x: hidden;
 }
 
-header .header-bottom .hamburger label .bx {
+header .header-bottom .hamburger label .bx.bx-bulb {
     font-size: 2.5rem;
     position: absolute;
-
+    color: #ffffff66;
     transition: var(--trans);
 }
 
-header .header-bottom .hamburger label .bx.bxs-sun {
-    color: #f39c12;
-    opacity: 0;
-    transform: translateX(200%);
-}
-
-header .header-bottom .hamburger label .bx.bxs-moon {
-    color: #f1c40f;
-}
-
-header .header-bottom .hamburger #mode:checked + label > .bx.bxs-sun {
+header .header-bottom .hamburger #mode:checked + label > .bx.bx-bulb {
     opacity: 1;
-    transform: translateX(0);
+    color: var(--accent-color);
+    filter: drop-shadow(2px 2px 10px rgba(168, 235, 18, 0.9));
 }
 
-header .header-bottom .hamburger #mode:checked + label > .bx.bxs-moon {
-    opacity: 0;
-    transform: translateX(200%);
+header .header-bottom .hamburger #mode:checked + label > .bx.bx-bulb:active {
+    transform: scale(0.9);
 }
 
 /*Banner*/
@@ -319,24 +308,6 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bxs-moon {
 .my-works .work-card .work-img {
     overflow: hidden;
     line-height: 0;
-}
-
-.my-works .work-card .work-img img {
-    animation: image-slide 3s ease infinite;
-}
-
-@keyframes image-slide {
-    0% {
-        transform: scale(1);
-    }
-
-    1% {
-        transform: scale(1.03);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }
 
 .my-works .work-card .work-text {
@@ -702,8 +673,8 @@ button#back2top {
     .section-title {
         font-size: 4rem;
     }
-    
-    .my-works .work-card{
+
+    .my-works .work-card {
         min-height: max-content;
     }
 }
