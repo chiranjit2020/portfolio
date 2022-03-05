@@ -174,12 +174,6 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bx-bulb:active {
     line-height: 0;
 }
 
-.banner .banner-desktop {}
-
-.banner .banner-mobile {
-    display: none;
-}
-
 .banner .desc {
     position: absolute;
     background-color: transparent;
@@ -272,10 +266,18 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bx-bulb:active {
     margin: 0 0 1.8rem 0;
 }
 
+.about-me .about-text p > a {
+    text-decoration: underline;
+    color: var(--black);
+}
+
 .about-me .about-img {
     border: 4px solid #ebebeb;
     line-height: 0;
     box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    
 }
 
 /*My Skills*/
@@ -634,6 +636,7 @@ button#back2top {
 }
 
 @media screen and (max-width: 768px) {
+    /*
     .banner .banner-desktop {
         display: none;
     }
@@ -642,6 +645,7 @@ button#back2top {
         display: block;
         margin: 0 auto;
     }
+*/
 
     .banner .desc {
         position: static;
