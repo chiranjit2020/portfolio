@@ -41,7 +41,9 @@ body.dark .about-me {
 }
 
 body.dark .about-me .section-title,
-body.dark .about-me p {
+body.dark .about-me .about-text > *,
+body.dark .about-me .about-text > .more-info > p,
+body.dark .about-me .about-text > .more-info > p > a{
     color: var(--off-yellow);
 }
 

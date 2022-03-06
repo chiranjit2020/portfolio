@@ -602,7 +602,8 @@ ol {
 
 .my-skills .leg-4:nth-child(7) .card::after,
 .my-skills .leg-4:nth-child(8) .card::after,
-.my-skills .leg-4:nth-child(9) .card::after {
+.my-skills .leg-4:nth-child(9) .card::after,
+.my-skills .leg-4:nth-child(11) .card::after {
     content: 'LEARNING';
     position: absolute;
     right: 2%;

@@ -277,7 +277,24 @@ header .header-bottom .hamburger #mode:checked + label > .bx.bx-bulb:active {
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
-    
+}
+
+.about-me .about-text .more-info {
+    max-height: 0px;
+    opacity: 0;
+    transition: var(--trans);
+}
+.about-me .about-text .know-more-btn{
+    position: relative;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--black);
+    line-height: 1.3;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid currentcolor;
+    cursor: pointer;
+    margin-bottom: 1.8rem;
 }
 
 /*My Skills*/

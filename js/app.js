@@ -108,3 +108,12 @@ form.addEventListener('submit', function (e) {
             }, 3000);
         });
 });
+
+//More Info
+let moreInfo = document.querySelector('.more-info');
+let knowMoreBtn = document.querySelector('.know-more-btn');
+
+knowMoreBtn.addEventListener('click', function(e){
+    moreInfo.style.cssText = 'max-height: max-content; opacity: 1;';
+    this.style.display = 'none';
+})
