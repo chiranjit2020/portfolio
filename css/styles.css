@@ -1,0 +1,270 @@
+:root {
+    --font: 'DM Sans', sans-serif;
+    --title: 'Bebas Neue', cursive;
+
+    --black: #111517;
+    --white: #f3f5f9;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(40, 49, 54, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+body {
+    font-family: var(--font);
+    font-size: 1.6rem;
+    color: var(--white);
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-size: 1.4rem;
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    border-radius: 0;
+    padding: 1rem;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(40, 49, 54, 1);
+    padding: 0 0 2rem 0;
+    margin: 0 0 5rem 0;
+}
+
+.intro {
+    height: 100vh;
+    background: var(--black);
+    background: linear-gradient(150deg, rgba(40, 49, 54, 1) 0%, rgba(17, 21, 23, 1) 35%);
+}
+
+.masthead {
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.masthead .d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.masthead .primay-nav {
+    padding: 0;
+    margin: 0;
+}
+
+.masthead .primay-nav .d-flex {
+    gap: 3rem;
+    border: none;
+}
+
+.masthead .primay-nav li a {
+    font-size: 1.4rem;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.masthead .primay-nav li:nth-last-of-type(1) {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.masthead .logo-block-ck {
+    max-width: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.banner h1 {
+    font-family: var(--title);
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.banner .btn:hover{
+    text-decoration: none;
+}
+
+.about-section {
+    padding: 0 0 5rem 0;
+    margin: 0;
+}
+
+.about-section p{
+    padding: 0;
+    margin: 0 0 3rem 0;
+}
+
+.skills-section {
+    padding: 0 0 5rem 0;
+    margin: 0;
+}
+
+.skills-section .skills-wrapper .skill-block {
+    padding: 0;
+    margin: 0 0 3rem 0;
+}
+
+
+.contact-section {
+    padding: 0 0 5rem 0;
+    margin: 0;
+}
+
+.contact-section .form-control {
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(40, 49, 54, 1);
+    border-radius: 0;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.contact-section .form-control::placeholder {
+    font-size: 1.2rem;
+}
+
+.contact-section .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid var(--white);
+}
+
+.contact-section textarea.form-control {
+    resize: none;
+    height: 10rem;
+}
+
+.contact-section button.btn {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--black);
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+.contact-section .contact-block {
+    padding: 0;
+    margin: 0 0 3rem 0;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer .container {
+    border-top: 1px solid rgba(40, 49, 54, 1);
+}
+
+footer p {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+
+/*Media*/
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .contact-section {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-section form{
+        margin-bottom: 5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    .banner h1 {
+        font-size: 7rem;
+    }
+    .section-title {
+        margin: 0 0 3rem 0;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .banner h1 {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .banner h1 {
+        font-size: 5rem;
+    }
+    .masthead .primay-nav .d-flex {
+        gap: 2.5rem;
+        border: none;
+    }
+}
