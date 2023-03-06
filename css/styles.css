@@ -145,7 +145,11 @@ body {
 }
 
 .about-section {
-    padding: 0 0 5rem 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    padding: 0;
     margin: 0;
 }
 
@@ -155,7 +159,11 @@ body {
 }
 
 .skills-section {
-    padding: 0 0 5rem 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    padding: 0;
     margin: 0;
 }
 
@@ -166,8 +174,12 @@ body {
 
 
 .contact-section {
-    padding: 0 0 5rem 0;
-    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    padding: 0;
+    margin: 0 0 4.2rem 0;
 }
 
 .contact-section .form-control {
@@ -204,6 +216,12 @@ body {
     margin: 0;
 }
 
+.contact-section .contact-wrapper .contact-links--block .d-grid{
+    --column: 2;
+    grid-template-columns: repeat(var(--column), 1fr);
+    gap: 2rem;
+}
+
 .contact-section .contact-block {
     padding: 0;
     margin: 0 0 3rem 0;
@@ -212,9 +230,14 @@ body {
 
 
 footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     text-align: center;
     padding: 0;
     margin: 0;
+    z-index: -1;
 }
 
 footer .container {
@@ -257,6 +280,9 @@ footer p {
 @media only screen and (max-width: 430px){
     .banner h1 {
         font-size: 6rem;
+    }
+    .contact-section .contact-wrapper .contact-links--block .d-grid{
+        --column: 1;
     }
 }
 
