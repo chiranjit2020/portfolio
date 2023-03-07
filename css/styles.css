@@ -29,6 +29,8 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    height: fill-available;
+    height: -webkit-fill-available;
 }
 
 ul,
@@ -142,7 +144,9 @@ body {
 
 /*Banner Start*/
 .intro {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
     background: var(--black);
     background: linear-gradient(150deg, rgba(40, 49, 54, 1) 0%, rgba(17, 21, 23, 1) 35%);
 }
@@ -206,7 +210,9 @@ body {
 }
 
 .about-section {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
     display: flex;
     align-items: center;
     background-color: var(--black);
@@ -220,7 +226,9 @@ body {
 }
 
 .skills-section {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
     display: flex;
     align-items: center;
     background-color: var(--black);
@@ -235,7 +243,9 @@ body {
 
 
 .contact-section {
-    height: 100vh;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
     display: flex;
     align-items: center;
     background-color: var(--black);
