@@ -1,9 +1,10 @@
 :root {
     --font: 'DM Sans', sans-serif;
-    --title: 'Bebas Neue', cursive;
+    --title: 'Anton', sans-serif;;
 
     --black: #111517;
     --white: #f3f5f9;
+    --yellow: #ffc107;
 }
 
 /* width */
@@ -31,6 +32,8 @@ html {
     scroll-behavior: smooth;
     height: fill-available;
     height: -webkit-fill-available;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 ul,
@@ -41,13 +44,14 @@ ol {
 }
 
 a {
-    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--yellow);
     display: inline-block;
     color: var(--white);
 }
 
 a:hover {
-    text-decoration: underline;
     color: var(--white);
 }
 
@@ -64,19 +68,20 @@ body {
 
 .btn {
     font-size: 1.4rem;
-    color: var(--white);
+    color: var(--black);
     text-transform: uppercase;
     border: none;
-    border-bottom: 1px solid var(--white);
     border-radius: 0;
-    padding: 1rem;
+    background-color: var(--white);
+    padding: 1rem 2rem; 
     margin: 0;
 }
 
 .section-title {
+    font-family: var(--title);
     font-size: 5rem;
-    font-weight: 700;
-    text-transform: capitalize;
+    font-weight: 400;
+    text-transform: uppercase;
     border-bottom: 1px solid rgba(40, 49, 54, 1);
     padding: 0 0 2rem 0;
     margin: 0 0 5rem 0;
@@ -144,14 +149,21 @@ body {
 
 /*Banner Start*/
 .intro {
-    min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
+    min-height: 100vh;
     background: var(--black);
     background: linear-gradient(150deg, rgba(40, 49, 54, 1) 0%, rgba(17, 21, 23, 1) 35%);
+    display: flex;
 }
 
 .masthead {
+    position: fixed;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #283136;
+    background: rgb(17 21 23 / 20%);
+    backdrop-filter: blur(10px);
     padding: 1rem 0;
     margin: 0;
 }
@@ -172,6 +184,7 @@ body {
 }
 
 .masthead .primay-nav li a {
+    text-decoration: none;
     font-size: 1.4rem;
     color: var(--white);
     text-transform: capitalize;
@@ -184,11 +197,24 @@ body {
     overflow: hidden;
 }
 
-
 .masthead .logo-block-ck {
+    position: relative;
+    overflow: hidden;
     max-width: 5rem;
     padding: 0;
     margin: 0;
+    perspective: 1000px;
+}
+
+.masthead .logo-block-ck a > img{
+    display: block; 
+    animation: animatedLogo 8s ease-in-out infinite;
+}
+
+@keyframes animatedLogo{
+    100%{
+        transform: rotateY(360deg);
+    }
 }
 
 .banner {
@@ -196,13 +222,28 @@ body {
     place-items: center;
     text-align: center;
     height: 100%;
+    margin: auto;
 }
 
 .banner h1 {
     font-family: var(--title);
     font-size: 8rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.banner h1 > span{
+    display: block;
+    font-family: var(--font);
+    font-size: 1.6rem;
+
+
+}
+
+.banner p{
+    padding: 3rem 0;
 }
 
 .banner .btn:hover {
@@ -210,9 +251,9 @@ body {
 }
 
 .about-section {
-    min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: var(--black);
@@ -226,9 +267,9 @@ body {
 }
 
 .skills-section {
-    min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: var(--black);
@@ -243,14 +284,15 @@ body {
 
 
 .contact-section {
-    min-height: 100vh;
+    position: relative;
     min-height: fill-available;
     min-height: -webkit-fill-available;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: var(--black);
     padding: 0;
-    margin: 0 0 4.2rem 0;
+    margin: 0;
 }
 
 .contact-section .form-control {
@@ -298,34 +340,41 @@ body {
     margin: 0 0 3rem 0;
 }
 
+.contact-section .contact-block a{
+    text-decoration: none;
+}
 
-
-footer {
-    position: fixed;
+.contact-section .footer-text{
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     text-align: center;
-    padding: 0;
-    margin: 0;
-    z-index: -1;
-}
-
-footer .container {
     border-top: 1px solid rgba(40, 49, 54, 1);
-}
-
-footer p {
-    font-size: 1.4rem;
-    padding: 1rem 0;
-    margin: 0;
+    padding: 2rem 0;
+    margin: 0 0 0 0;  
 }
 
 
-/*Media*/
+/*Media Query*/
+@media only screen and (max-width: 1199px) {
+    .banner h1 {
+        font-size: 6rem;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     html {
-        font-size: 55%;
+        font-size: 60%;
+    }
+
+    .about-section {
+        padding: 0 0 6rem 0;
+    }
+
+    .skills-section {
+        padding: 0 0 6rem 0;
     }
 
     .contact-section {
@@ -337,11 +386,24 @@ footer p {
         margin-bottom: 5rem;
     }
 
+    .contact-links--block {
+        padding: 0 0 8rem 0;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
+    html{
+        font-size: 62.5%;
+    }
+
+    p{
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
     .banner h1 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 
     .section-title {
@@ -352,7 +414,7 @@ footer p {
 
 @media only screen and (max-width: 430px) {
     .banner h1 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .contact-section .contact-wrapper .contact-links--block .d-grid {
@@ -360,9 +422,27 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 380px){
+    .intro {
+        flex-direction: column;
+    }
+
+    .masthead{
+        position: static;
+    }
+
+    .masthead .d-flex {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+
 @media only screen and (max-width: 360px) {
     .banner h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .masthead .primay-nav .d-flex {
