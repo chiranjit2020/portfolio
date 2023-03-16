@@ -154,6 +154,7 @@ body {
     min-height: 100vh;
     background: var(--black);
     background: linear-gradient(150deg, rgba(40, 49, 54, 1) 0%, rgba(17, 21, 23, 1) 35%);
+    background-image:radial-gradient(at 64% 15%, hsla(248,87%,22%,1) 0px, transparent 50%), radial-gradient(at 69% 58%, hsla(298,60%,21%,1) 0px, transparent 50%);
     display: flex;
 }
 
