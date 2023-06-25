@@ -240,7 +240,7 @@ body {
         font-family: var(--title);
         font-size: 8rem;
         color: transparent;
-        -webkit-text-stroke: #f3f5f9;
+        -webkit-text-stroke: 1px var(--white);
         text-transform: uppercase;
         font-weight: 400;
         padding: 0;
@@ -252,8 +252,8 @@ body {
     display: block;
     font-family: var(--font);
     font-size: 1.6rem;
-
-
+    color: var(--white);
+    -webkit-text-stroke: unset;
 }
 
 .banner p{
