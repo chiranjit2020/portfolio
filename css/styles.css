@@ -253,7 +253,7 @@ body {
     font-family: var(--font);
     font-size: 1.6rem;
     color: var(--white);
-    -webkit-text-stroke: unset;
+    -webkit-text-stroke: var(--white);
 }
 
 .banner p{
