@@ -556,6 +556,10 @@ body {
         padding: 0 0 6rem 0;
     }
 
+    .blogs-section .blog-card {
+        margin: 0 0 3rem 0;
+    }
+
     .contact-section {
         padding: 0;
         margin: 0;
