@@ -235,6 +235,19 @@ body {
     margin: 0;
 }
 
+@supports (-webkit-text-stroke: var(--white)){
+    .banner h1 {
+        font-family: var(--title);
+        font-size: 8rem;
+        color: transparent;
+        -webkit-text-stroke: #f3f5f9;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    } 
+}
+
 .banner h1 > span{
     display: block;
     font-family: var(--font);
