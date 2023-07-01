@@ -88,6 +88,11 @@ body {
     margin: 0 0 5rem 0;
 }
 
+.spacer{
+    border-top: 2px dashed rgba(40, 49, 54, 1);
+    margin: 3rem 0;
+}
+
 /*Cursor*/
 #cursor {
     position: fixed;
@@ -444,10 +449,6 @@ body {
     margin: 0;
 }
 
-.single-blog-wrapper .single-blog-content .spacer{
-    border-top: 2px dashed rgba(40, 49, 54, 1);
-    margin: 3rem 0;
-}
 
 .single-blog-wrapper .single-blog-content h2{
     font-size: 4.4rem;
@@ -506,15 +507,38 @@ body {
 
 
 
+/* Sidebar */
+.sidebar{
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
 
 
+.sidebar ul{
+    padding: 0;
+    margin: 0 0 5rem 0;
+}
 
+.sidebar ul li{
+    border-bottom: 1px solid rgba(40, 49, 54, 1);
+    padding: 2rem 1rem;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+}
 
+.sidebar ul li:hover{
+    background-color: rgba(40, 49, 54, 1);
+}
 
-
-
-
-
+.sidebar ul li > a{
+    display: block;
+    text-decoration: none;
+}
 
 
 
