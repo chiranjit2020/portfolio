@@ -515,6 +515,8 @@ body {
 .sidebar{
     padding: 0;
     margin: 0;
+    position: sticky;
+    top: 100px;
 }
 
 .sidebar h2{
