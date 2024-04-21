@@ -139,7 +139,7 @@ img{
 .banner{
     display: block;
     background-color: var(--gray);
-    background-image: linear-gradient(1rad, rgba(0,0,0,0.91), rgba(0,0,0,0.82)), url('../images/chiranjit-karmakar.jpg');
+    background-image: linear-gradient(1rad, rgba(0,0,0,0.9), rgba(0,0,0,0.72)), url('../images/chiranjit-karmakar.jpg');
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
@@ -400,6 +400,11 @@ header #menu-trigger{
     border: none;
     cursor: pointer;
     margin-left: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-section button.btn:hover{
+    background-color: var(--orange);
 }
 
 /* Footer */
@@ -543,6 +548,9 @@ footer .footer-text{
 }
 
 @media only screen and (max-width: 580px){
+    .banner{
+        background-position: center;
+    }
     .about-and-skills .skills-section .skills-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -561,6 +569,43 @@ footer .footer-text{
 }
 
 @media only screen and (max-width: 420px){
+    .btn {
+        font-size: 1.8rem;
+    }
+    header .d-grid {
+        grid-template-columns: 5rem auto;
+        align-items: center;
+    }
+    header #menu-trigger {
+        --size: 4rem;
+        font-size: 3.5rem;
+    }
+    header .primary-nav.primary-nav--open {
+        top: 7.5rem;
+    }
+    header .primary-nav.primary-nav--open ul {
+        justify-content: center;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+    .hero-section .d-grid {
+        gap: 2rem;
+    }
+    .hero-section h1 > span {
+        font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    }
+    .hero-section p {
+        line-height: 1.5;
+        font-size: 1.6rem;
+    }
+    .about-and-skills .about-section p {
+        font-size: 1.6rem;
+    }
+
+    .about-and-skills .btn{
+        display: block;
+    }
+
     .contact-section {
         padding: 0 0 4rem 0;
         margin: 0;
